@@ -1,0 +1,68 @@
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.deps.json
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.dll
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.csprojAssemblyReference.cache
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.AssemblyInfoInputs.cache
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.AssemblyInfo.cs
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.runtimeconfig.json
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.runtimeconfig.dev.json
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.pdb
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.csproj.CoreCompileInputs.cache
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.dll
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.pdb
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.genruntimeconfig.cache
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.Common.dll
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.DAL.dll
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.Common.pdb
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.DAL.pdb
+D:\Đại Học Mở\Lập Trình Cơ Sở Dữ Liệu\Bài tập lớn\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.csproj.CopyComplete
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.deps.json
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.runtimeconfig.json
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.runtimeconfig.dev.json
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.dll
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.pdb
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.Common.dll
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.DAL.dll
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.Common.pdb
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.DAL.pdb
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.csprojAssemblyReference.cache
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.csproj.CoreCompileInputs.cache
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.AssemblyInfoInputs.cache
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.AssemblyInfo.cs
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.csproj.CopyComplete
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.dll
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.pdb
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanhLoaiCharID\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.genruntimeconfig.cache
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.deps.json
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.runtimeconfig.json
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.runtimeconfig.dev.json
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.dll
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.pdb
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.Common.dll
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.DAL.dll
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.Common.pdb
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.DAL.pdb
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.csprojAssemblyReference.cache
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.csproj.CoreCompileInputs.cache
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.AssemblyInfoInputs.cache
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.AssemblyInfo.cs
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.csproj.CopyComplete
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.dll
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.pdb
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\DemoWebCayCanh\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.genruntimeconfig.cache
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.deps.json
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.runtimeconfig.json
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.runtimeconfig.dev.json
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.dll
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.BLL.pdb
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.Common.dll
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.DAL.dll
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.Common.pdb
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\bin\Debug\netcoreapp3.1\WebCayCanh.DAL.pdb
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.csprojAssemblyReference.cache
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.csproj.CoreCompileInputs.cache
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.AssemblyInfoInputs.cache
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.AssemblyInfo.cs
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.csproj.CopyComplete
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.dll
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.pdb
+D:\LẬP TRÌNH CƠ SỞ DỮ LIỆU\BAI_TAP_LON_MIDTERM\WebCayCanh\WebCayCanh.BLL\obj\Debug\netcoreapp3.1\WebCayCanh.BLL.genruntimeconfig.cache

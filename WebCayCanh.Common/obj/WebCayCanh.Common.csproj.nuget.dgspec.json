@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\LẬP TRÌNH CƠ SỞ DỮ LIỆU\\BAI_TAP_LON_MIDTERM\\WebCayCanh\\WebCayCanh.Common\\WebCayCanh.Common.csproj": {}
+  },
+  "projects": {
+    "D:\\LẬP TRÌNH CƠ SỞ DỮ LIỆU\\BAI_TAP_LON_MIDTERM\\WebCayCanh\\WebCayCanh.Common\\WebCayCanh.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\LẬP TRÌNH CƠ SỞ DỮ LIỆU\\BAI_TAP_LON_MIDTERM\\WebCayCanh\\WebCayCanh.Common\\WebCayCanh.Common.csproj",
+        "projectName": "WebCayCanh.Common",
+        "projectPath": "D:\\LẬP TRÌNH CƠ SỞ DỮ LIỆU\\BAI_TAP_LON_MIDTERM\\WebCayCanh\\WebCayCanh.Common\\WebCayCanh.Common.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\LẬP TRÌNH CƠ SỞ DỮ LIỆU\\BAI_TAP_LON_MIDTERM\\WebCayCanh\\WebCayCanh.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
