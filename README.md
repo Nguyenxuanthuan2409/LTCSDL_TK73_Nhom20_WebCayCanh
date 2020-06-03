@@ -4,11 +4,11 @@
 
 ## **Danh Sách Thành Viên:**
 
-- Nguyễn Xuân Thuận ( Nhóm Trưởng )       1754050087
-- Dương Trần Hoài Bảo                     1754050010
-- Trương Thị Hiền Hòa                     1754052024
-- Võ Thị Trúc Ngân                        1754050056
-- Nguyễn Lệ Mỹ                            1754052040
+- Nguyễn Xuân Thuận ( Nhóm Trưởng )      -   1754050087
+- Dương Trần Hoài Bảo                    -   1754050010
+- Trương Thị Hiền Hòa                    -   1754052024
+- Võ Thị Trúc Ngân                       -   1754050056
+- Nguyễn Lệ Mỹ                           -   1754052040
 
 ## **Mô tả Project ( Kỹ thuật và nghiệp vụ)**
 - Khách hàng lựa chọn cây, số lượng, nhập ghi chú, địa chỉ.
@@ -21,12 +21,12 @@
 Có thể Test các API trong localhost chạy lên rồi thêm /swagger/index.html/
 
 ## **Phân công công việc:**
-- ### **Nguyễn Xuân Thuận:** ### Xây dựng CSDL cho Website. Chỉnh sửa và cấu hình cho hợp lý.
+- #### **Nguyễn Xuân Thuận:** Xây dựng CSDL cho Website. Chỉnh sửa và cấu hình cho hợp lý.
 
-- ### **Dương Trần Hoài Bảo:**
+- #### **Dương Trần Hoài Bảo:**
 
-- ### **Trương Thị Hiền Hòa:**
+- #### **Trương Thị Hiền Hòa:**
 
-- ### **Võ Thị Trúc Ngân:**
+- #### **Võ Thị Trúc Ngân:**
 
-- ### **Nguyễn Lệ Mỹ:**
+- #### **Nguyễn Lệ Mỹ:**
