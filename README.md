@@ -22,7 +22,7 @@ Có thể Test các API trong localhost chạy lên rồi thêm /swagger/index.h
 
 ## **4. Phân công công việc:**
 - #### **Nguyễn Xuân Thuận:** 
--- Xây dựng CSDL cho Website. Chỉnh sửa và cấu hình cho hợp lý.
+  - Xây dựng CSDL cho Website. Chỉnh sửa và cấu hình cho hợp lý.
 
 - #### **Dương Trần Hoài Bảo:**
 
