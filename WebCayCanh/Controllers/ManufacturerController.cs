@@ -22,28 +22,28 @@ namespace WebCayCanh.Web.Controllers
             _svc = new ManufacturerSvc();
         }
 
-        [HttpPost("create-Manufacturer")]
+        [HttpPost("create-manufacturer")]
         public IActionResult CreateManufacturer(ManufacturerReq req)
         {
             var res = _svc.CreateManufacturer(req);
             return Ok(res);
         }
 
-        [HttpPost("update-Manufacturer")]
+        [HttpPost("update-manufacturer")]
         public IActionResult UpdateManufacturer(ManufacturerReq req)
         {
             var res = _svc.UpdateManufacturer(req);
             return Ok(res);
         }
 
-        [HttpPost("search-Manufacturer")]
+        [HttpPost("search-manufacturer")]
         public IActionResult SearchManufacturer(SearchReq req)
         {
             var res = _svc.SearchManufacturer(req.keyWord, req.size, req.page);
             return Ok(res);
         }
 
-        [HttpPost("delete-Manufacturer")]
+        [HttpPost("delete-manufacturer")]
         public IActionResult DeleteManufacturer(DeleteReq req)
         {
             var res = _svc.DeleteManufacturer(req.id);

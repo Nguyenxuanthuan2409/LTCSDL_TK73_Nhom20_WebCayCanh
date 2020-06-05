@@ -39,28 +39,28 @@ namespace WebCayCanh.Web.Controllers
         //    return Ok(res);
         //}
         #endregion
-        [HttpPost("create-Users")]
+        [HttpPost("create-users")]
         public IActionResult CreateUsers(UsersReq req)
         {
             var res = _svc.CreateUsers(req);
             return Ok(res);
         }
 
-        [HttpPost("update-Users")]
+        [HttpPost("update-users")]
         public IActionResult UpdateUsers(UsersReq req)
         {
             var res = _svc.UpdateUsers(req);
             return Ok(res);
         }
 
-        [HttpPost("search-Users")]
+        [HttpPost("search-users")]
         public IActionResult SearchUsers(SearchReq req)
         {
             var res = _svc.SearchUsers(req.keyWord, req.size, req.page);
             return Ok(res);
         }
 
-        [HttpPost("delete-Users")]
+        [HttpPost("delete-users")]
         public IActionResult DeleteUsers(DeleteReq req)
         {
             var res = _svc.DeleteUsers(req.id);

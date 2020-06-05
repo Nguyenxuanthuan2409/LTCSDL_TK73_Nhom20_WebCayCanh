@@ -22,28 +22,28 @@ namespace WebCayCanh.Web.Controllers
             _svc = new OrderSvc();
         }
        
-        [HttpPost("create-Order")]
+        [HttpPost("create-order")]
         public IActionResult CreateOrder(OrderReq req)
         {
             var res = _svc.CreateOrder(req);
             return Ok(res);
         }
 
-        [HttpPost("update-Order")]
+        [HttpPost("update-order")]
         public IActionResult UpdateOrder(OrderReq req)
         {
             var res = _svc.UpdateOrder(req);
             return Ok(res);
         }
 
-        [HttpPost("search-Order")]
+        [HttpPost("search-order")]
         public IActionResult SearchOrder(SearchReq req)
         {
             var res = _svc.SearchOrder(req.keyWord, req.size, req.page);
             return Ok(res);
         }
 
-        [HttpPost("delete-Order")]
+        [HttpPost("delete-order")]
         public IActionResult DeleteOrder(DeleteReq req)
         {
             var res = _svc.DeleteOrder(req.id);
