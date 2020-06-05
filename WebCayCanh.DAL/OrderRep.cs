@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using WebCayCanh.Common.DAL;
 using System.Linq;
+using WebCayCanh.Common.Rsp;
 
 namespace WebCayCanh.DAL
 {
@@ -40,6 +41,29 @@ namespace WebCayCanh.DAL
             Context.SaveChanges();
             return m.OrderId;
 
+        }
+        public SingleRsp CreateOrder(Order pro)
+        {
+            var res = new SingleRsp();
+            using (var context = new WEBCAYCANHContext())
+            {
+                using (var tran = context.Database.BeginTransaction())
+                {
+                    try
+                    {
+                        var t = context.Order.Add(pro);
+                        context.SaveChanges();
+                        tran.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        tran.Rollback();
+                        res.SetError(ex.StackTrace);
+                    }
+                }
+            }
+            res.Data = pro;
+            return res;
         }
         #endregion
     }

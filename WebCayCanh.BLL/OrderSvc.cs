@@ -89,6 +89,29 @@ namespace WebCayCanh.BLL
             return res;
         }
 
+        public SingleRsp CreateOrder1(OrderReq req)
+        {
+            var res = new SingleRsp();
+            try
+            {
+                Order c = new Order();
+                c.OrderId = req.OrderId;
+                c.OrderDate = req.OrderDate;
+                c.OrderNumber = req.OrderNumber;
+                c.CustomerId = req.CustomerId;
+                c.OrderDescription = req.OrderDescription;
+                c.Orderdetail = null;
+                //
+                res = _rep.CreateOrder(c);
+                //res.Data = c;
+            }
+            catch (Exception ex)
+            {
+                res.SetError(ex.StackTrace);
+            }
+
+            return res;
+        }
         public SingleRsp UpdateOrder(OrderReq req)
         {
             var res = new SingleRsp();
