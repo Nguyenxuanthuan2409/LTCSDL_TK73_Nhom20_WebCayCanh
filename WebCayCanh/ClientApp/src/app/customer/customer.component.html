@@ -1,0 +1,123 @@
+<h1 id="tableLabel">Customers</h1>
+
+<p>Bên dưới là danh sách các khách hàng của cửa hàng chúng tôi.</p>
+
+<p *ngIf="!customer"><em>Loading...</em></p>
+<button class="btn btn-primary"(click)="openModal(true,null)">Add new Customer</button>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="customer.totalRecords> 0">
+
+  <thead>
+    <tr>
+      <th>Customer Id</th>
+      <th>First Name</th>
+      <th>LastName</th>
+      <th>Email</th>
+      <th>Phone Number</th>
+      <th>Street</th>
+      <th>District</th>
+      <th>City</th>
+      <th>Customer Description</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of customer.data; index as i;">
+      <td>{{ c.customerId}}</td>
+      <td>{{ c.firstName}}</td>
+      <td>{{ c.lastName}}</td>
+      <td>{{ c.email}}</td>
+      <td>{{ c.phoneNumber}}</td>
+      <td>{{ c.street}}</td>
+      <td>{{ c.district}}</td>
+      <td>{{ c.city}}</td>
+      <td>{{ c.customerDescription}}</td>
+      
+      <td>
+        <button class="btn btn-info btm-sm"(click)="openModal(false,c)"> Edit </button>
+        <button class="btn btn-danger btm-sm"(click)="deleteCustomer(i)"> Delete </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul class="pagination">
+  <li class="page-item">
+    <a href="javascript:void(0);"(click)="searchPrevious()"> Previous&ensp;</a>
+  </li>
+  
+  <li class="page-item"> <b>{{customer.page}}</b> </li>
+  
+  <li class="page-item">
+    <a href="javascript:void(0);"(click)="searchNext()">&ensp;Next </a>
+  </li>
+</ul>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" *ngIf="!isEdit" id="exampleModalLabel">Add new Customer</h5>
+        <h5 class="modal-title" *ngIf="isEdit" id="exampleModalLabel">Update Customer</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="row" *ngIf="!isEdit">
+            <div class="col-4">Customer Id</div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập ID khách hàng" [(ngModel)]="customers.customerId"></div>
+        </div> <br>
+
+        <div class="row">
+          <div class="col-4">First Name</div>
+          <div class="col-8"><input class="form-control" placeholder="Nhập tên..." [(ngModel)]="customers.firstName"></div>
+        </div>  <br>
+
+        <div class="row">
+          <div class="col-4"> Last Name </div>
+          <div class="col-8"><input class="form-control" placeholder="Nhập họ..." [(ngModel)]="customers.lastName"></div>
+        </div>  <br>
+
+        <div class="row">
+          <div class="col-4"> Email </div>
+          <div class="col-8"><input class="form-control" placeholder="Nhập email ..." [(ngModel)]="customers.email"></div>
+        </div>  <br>
+
+        <div class="row">
+            <div class="col-4"> Phone Number </div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập số điện thoại..." [(ngModel)]="customers.phoneNumber"></div>
+        </div>  <br>
+
+        <div class="row">
+            <div class="col-4"> Street </div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập đường..." [(ngModel)]="customers.street"></div>
+        </div>  <br>
+
+        <div class="row">
+            <div class="col-4"> District </div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập quận ...." [(ngModel)]="customers.district"></div>
+        </div>  <br>
+
+        <div class="row">
+            <div class="col-4"> City </div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập tên thành phố..." [(ngModel)]="customers.city"></div>
+        </div>  <br>
+
+        <div class="row">
+            <div class="col-4"> Customer Description </div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập mô tả (nếu có)" [(ngModel)]="customers.customerDescription"></div>
+        </div>  <br>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button *ngIf="isEdit" type="button" class="btn btn-primary"(click)="updateCustomer()">Save</button>
+        <button *ngIf="!isEdit" type="button" class="btn btn-success"(click)="addCustomer()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

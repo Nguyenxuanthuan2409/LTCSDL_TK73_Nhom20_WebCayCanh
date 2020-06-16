@@ -1,0 +1,111 @@
+<h1 id="tableLabel">Products</h1>
+
+<p>Bên dưới là danh sách các sản phẩm của cửa hàng chúng tôi.</p>
+
+<p *ngIf="!product"><em>Loading...</em></p>
+<button class="btn btn-primary"(click)="openModal(true,null)">Add new Product</button>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="product.totalRecords> 0">
+
+  <thead>
+    <tr>
+      <th>ProductId</th>
+      <th>Product Name</th>
+      <th>Amount</th>
+      <th>Amount Remaining</th>
+      <th>Old Price</th>
+      <th>Product Image</th>
+      <th>ManufacturerId</th>
+      <th>CategoryId</th>
+      <th>Product Description</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of product.data; index as i;">
+      <td>{{ p.productId}}</td>
+      <td>{{ p.productName}}</td>
+      <td>{{ p.amount}}</td>
+      <td>{{ p.amountRemaining}}</td>
+      <td>{{ p.oldPrice}}</td>
+      <td>{{ p.productImage}}</td>
+      <td>{{ p.manufacturerId}}</td>
+      <td>{{ p.categoryId}}</td>
+      <td>{{ p.productDescription}}</td>
+      <td>
+        <button class="btn btn-info btm-sm"(click)="openModal(false,p)"> Edit </button>
+        <button class="btn btn-danger btm-sm"(click)="deleteProduct(i)"> Delete </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul class="pagination">
+  <li class="page-item">
+    <a href="javascript:void(0);"(click)="searchPrevious()"> Previous&ensp;</a>
+  </li>
+  
+  <li class="page-item"> <b>{{product.page}}</b> </li>
+  
+  <li class="page-item">
+    <a href="javascript:void(0);"(click)="searchNext()">&ensp;Next </a>
+  </li>
+</ul>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" *ngIf="!isEdit" id="exampleModalLabel">Add new Product</h5>
+        <h5 class="modal-title" *ngIf="isEdit" id="exampleModalLabel">Update Product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row" *ngIf="!isEdit">
+            <div class="col-4">Product Id</div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập ID sản phẩm..." [(ngModel)]="products.productId"></div>
+        </div> <br>
+        <div class="row">
+          <div class="col-4">Product Name</div>
+          <div class="col-8"><input class="form-control" placeholder="Nhập tên sản phẩm..." [(ngModel)]="products.productName"></div>
+        </div>  <br>
+        <div class="row">
+          <div class="col-4"> Amount </div>
+          <div class="col-8"><input class="form-control" placeholder="Nhập số lượng sản phẩm" type = "number" [(ngModel)]="products.amount"></div>
+        </div>  <br>
+        <div class="row">
+          <div class="col-4"> Amount Remaining </div>
+          <div class="col-8"><input class="form-control" type = "number" [(ngModel)]="products.amountRemaining"></div>
+        </div>  <br>
+        <div class="row">
+          <div class="col-4"> Old Price </div>
+          <div class="col-8"><input class="form-control" type = "number" [(ngModel)]="products.oldPrice"></div>
+        </div>  <br>
+        <div class="row">
+          <div class="col-4"> Product Image </div>
+          <div class="col-8"><input class="form-control"[(ngModel)]="products.productImage"></div>
+        </div>  <br>
+        <div class="row">
+          <div class="col-4"> Manufacturer Id </div>
+          <div class="col-8"><input class="form-control"[(ngModel)]="products.manufacturerId"></div>
+        </div>  <br>
+        <div class="row">
+          <div class="col-4"> Category Id </div>
+          <div class="col-8"><input class="form-control"[(ngModel)]="products.categoryId"></div>
+        </div>  <br>
+        <div class="row">
+          <div class="col-4"> Product Description </div>
+          <div class="col-8"><input class="form-control" placeholder="Nhập mô tả (nếu có)" [(ngModel)]="products.productDescription"></div>
+        </div>  <br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button *ngIf="isEdit" type="button" class="btn btn-primary"(click)="updateProduct()">Save</button>
+        <button *ngIf="!isEdit" type="button" class="btn btn-success"(click)="addProduct()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,129 @@
+<h1 id="tableLabel">Users</h1>
+
+<p>Bên dưới là danh sách Nhân viên của cửa hàng chúng tôi.</p>
+
+<p *ngIf="!user"><em>Loading...</em></p>
+<button class="btn btn-primary"(click)="openModal(true,null)">Add new User</button>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="user.totalRecords> 0">
+
+  <thead>
+    <tr>
+      <th>User Id</th>
+      <th>Email</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>User Name</th>
+      <th>Password</th>
+      <th>Active</th>
+      <th>Phone Number</th>
+      <th>User Image</th>
+      <th>User Description</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let u of user.data; index as i;">
+      <td>{{ u.userid}}</td>
+      <td>{{ u.email}}</td>
+      <td>{{ u.firstName}}</td>
+      <td>{{ u.lastName}}</td>
+      <td>{{ u.username}}</td>
+      <td>{{ u.passwords}}</td>
+      <td>{{ u.isActive}}</td>
+      <td>{{ u.phoneNumber}}</td>
+      <td>{{ u.usersImage}}</td>
+      <td>{{ u.usersDescription}}</td>
+      
+      <td>
+        <button class="btn btn-info btm-sm"(click)="openModal(false,u)"> Edit </button>
+        <button class="btn btn-danger btm-sm"(click)="deleteUser(i)"> Delete </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul class="pagination">
+  <li class="page-item">
+    <a href="javascript:void(0);"(click)="searchPrevious()"> Previous&ensp;</a>
+  </li>
+  
+  <li class="page-item"> <b>{{user.page}}</b> </li>
+  
+  <li class="page-item">
+    <a href="javascript:void(0);"(click)="searchNext()">&ensp;Next </a>
+  </li>
+</ul>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" *ngIf="!isEdit" id="exampleModalLabel">Add new User</h5>
+        <h5 class="modal-title" *ngIf="isEdit" id="exampleModalLabel">Update User</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="row" *ngIf="!isEdit">
+            <div class="col-4">User Id</div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập ID nhân viên..." [(ngModel)]="users.userid"></div>
+        </div> <br>
+
+        <div class="row">
+          <div class="col-4">Email</div>
+          <div class="col-8"><input class="form-control" placeholder="Nhập Email..." [(ngModel)]="users.email"></div>
+        </div>  <br>
+
+        <div class="row">
+          <div class="col-4"> First Name </div>
+          <div class="col-8"><input class="form-control" placeholder="Nhập tên..." [(ngModel)]="users.firstName"></div>
+        </div>  <br>
+
+        <div class="row">
+          <div class="col-4"> Last Name </div>
+          <div class="col-8"><input class="form-control" placeholder="Nhập họ ..." [(ngModel)]="users.lastName"></div>
+        </div>  <br>
+
+        <div class="row">
+            <div class="col-4"> User Name </div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập user name..." [(ngModel)]="users.username"></div>
+        </div>  <br>
+
+        <div class="row">
+            <div class="col-4"> Password </div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập mật khẩu..." [(ngModel)]="users.passwords"></div>
+        </div>  <br>
+
+        <div class="row">
+            <div class="col-4"> Active </div>
+            <div class="col-8"><input class="form-control" [(ngModel)]="users.isActive"></div>
+        </div>  <br>
+
+        <div class="row">
+            <div class="col-4"> Phone Number </div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập số điện thoại nhân viên..." [(ngModel)]="users.phoneNumber"></div>
+        </div>  <br>
+
+        <div class="row">
+            <div class="col-4"> User Image </div>
+            <div class="col-8"><input class="form-control"  [(ngModel)]="users.usersImage"></div>
+        </div>  <br>
+
+        <div class="row">
+            <div class="col-4"> User Description </div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập mô tả (nếu có)" [(ngModel)]="users.usersDescription"></div>
+        </div>  <br>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button *ngIf="isEdit" type="button" class="btn btn-primary"(click)="updateUser()">Save</button>
+        <button *ngIf="!isEdit" type="button" class="btn btn-success"(click)="addUser()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

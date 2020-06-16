@@ -138,13 +138,13 @@ namespace WebCayCanh.BLL
 
         public object SearchOrder(string keyWord, int size, int page)
         {
-
             var query = All; //Lấy toàn bộ dữ liệu của bảng customers
             if (!string.IsNullOrEmpty(keyWord)) //Kiểm tra keyWord có trống không
             {
                 //Lấy dữ liệu theo keyWord ở bảng
                 query = All.Where(x => x.OrderId.Contains(keyWord));
             }
+
             //Độ dời. Thứ tự dữ liệu sẽ bắt đầu từ offset
             var offset = (page - 1) * size;
             //Tổng cộng bao nhiêu dữ liệu được tìm thấy

@@ -160,7 +160,7 @@ namespace WebCayCanh.BLL
             var res = new SingleRsp();
             try
             {
-                res.Data = _rep.Remove(id);
+                res.Data = _rep.Remove(id);     // Kieu string ID
             }
             catch (Exception ex)
             {
