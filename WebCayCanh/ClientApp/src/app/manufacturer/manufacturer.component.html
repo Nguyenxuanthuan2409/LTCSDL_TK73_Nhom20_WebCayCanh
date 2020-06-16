@@ -1,0 +1,81 @@
+<h1 id="tableLabel">Manufacturers</h1>
+
+<p>Bên dưới là danh sách các nhà phân phối của cửa hàng chúng tôi.</p>
+
+<p *ngIf="!manufacturer"><em>Loading...</em></p>
+<button class="btn btn-primary"(click)="openModal(true,null)">Add new Manufacturer</button>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="manufacturer.totalRecords> 0">
+
+  <thead>
+    <tr>
+      <th>Manufacturer Id</th>
+      <th>Manufacturer Name</th>
+      <th>Manufacturer Description</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let m of manufacturer.data; index as i;">
+      <td>{{ m.manufacturerId}}</td>
+      <td>{{ m.manufacturerName}}</td>
+      <td>{{ m.manufacturerDescription}}</td>
+     
+      <td>
+        <button class="btn btn-info btm-sm"(click)="openModal(false,m)"> Edit </button>
+        <button class="btn btn-danger btm-sm"(click)="deleteManufacturer(i)"> Delete </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul class="pagination">
+  <li class="page-item">
+    <a href="javascript:void(0);"(click)="searchPrevious()"> Previous&ensp;</a>
+  </li>
+  
+  <li class="page-item"> <b>{{manufacturer.page}}</b> </li>
+  
+  <li class="page-item">
+    <a href="javascript:void(0);"(click)="searchNext()">&ensp;Next </a>
+  </li>
+</ul>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" *ngIf="!isEdit" id="exampleModalLabel">Add new Manufacturer</h5>
+        <h5 class="modal-title" *ngIf="isEdit" id="exampleModalLabel">Update Manufacturer</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="row" *ngIf="!isEdit">
+            <div class="col-4">Manufacturer Id</div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập ID nhà phân phối..." [(ngModel)]="manufacturers.manufacturerId"></div>
+        </div> <br>
+
+        <div class="row">
+          <div class="col-4">Manufacturer Name</div>
+          <div class="col-8"><input class="form-control" placeholder="Nhập tên nhà phân phối..." [(ngModel)]="manufacturers.manufacturerName"></div>
+        </div>  <br>
+
+        <div class="row">
+          <div class="col-4"> Manufacturer Description </div>
+          <div class="col-8"><input class="form-control" placeholder="Nhập mô tả (nếu có)" [(ngModel)]="manufacturers.manufacturerDescription"></div>
+        </div>  <br>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button *ngIf="isEdit" type="button" class="btn btn-primary"(click)="updateManufacturer()">Save</button>
+        <button *ngIf="!isEdit" type="button" class="btn btn-success"(click)="addManufacturer()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

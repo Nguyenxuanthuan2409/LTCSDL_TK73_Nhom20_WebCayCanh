@@ -3,7 +3,7 @@
     class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
   >
     <div class="container">
-      <a class="navbar-brand" [routerLink]="['/']">WebCayCanh</a>
+      <a class="navbar-brand" [routerLink]="['/']"><font color = "red"><h3><b>Trang Web Cây Cảnh</b></h3></font></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -25,8 +25,10 @@
             [routerLinkActive]="['link-active']"
             [routerLinkActiveOptions]="{ exact: true }"
           >
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+            <a class="nav-link text-dark" [routerLink]="['/']"><font color="blue"><b>Home</b></font></a>
           </li>
+          
+          <!-- No show 2 table Counter and Fetch data
           <li class="nav-item" [routerLinkActive]="['link-active']">
             <a class="nav-link text-dark" [routerLink]="['/counter']"
               >Counter</a
@@ -37,6 +39,49 @@
               >Fetch data</a
             >
           </li>
+          -->
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/search-category']"
+              ><font color="blue"><b>Categories</b></font></a
+            >
+          </li>
+
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/search-product']"
+              ><font color="blue"><b>Products</b></font></a
+            >
+          </li>
+
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/search-customer']"
+              ><font color="blue"><b>Customers</b></font></a
+            >
+          </li>
+
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/search-manufacturer']"
+              ><font color="blue"><b>Manufacturers</b></font></a
+            >
+          </li>
+
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/search-order']"
+              ><font color="blue"><b>Orders</b></font></a
+            >
+          </li>
+
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/search-orderdetail']"
+              ><font color="blue"><b>Orderdetails</b></font></a
+            >
+          </li>
+
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/search-users']"
+              ><font color="blue"><b>Users</b></font></a
+            >
+          </li>
+          
         </ul>
       </div>
     </div>

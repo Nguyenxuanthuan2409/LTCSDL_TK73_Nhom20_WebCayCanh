@@ -1,0 +1,100 @@
+<h1 id="tableLabel">Orderdetails</h1>
+
+<p>Bên dưới là danh sách chi tiết các đơn hàng của cửa hàng chúng tôi.</p>
+
+<p *ngIf="!orderdetail"><em>Loading...</em></p>
+<button class="btn btn-primary"(click)="openModal(true,null)">Add new Orderdetail</button>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="orderdetail.totalRecords> 0">
+
+  <thead>
+    <tr>
+      <th>Orderdetail Id</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Order Id</th>
+      <th>Product Id</th>
+      <th>User Id</th>
+      <th>Orderdetail Description</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let o of orderdetail.data; index as i;">
+      <td>{{ o.orderdetailId}}</td>
+      <td>{{ o.price}}</td>
+      <td>{{ o.quantity}}</td>
+      <td>{{ o.orderId}}</td>
+      <td>{{ o.productId}}</td>
+      <td>{{ o.userid}}</td>
+      <td>{{ o.orderdetailDescription}}</td>
+      <td>
+        <button class="btn btn-info btm-sm"(click)="openModal(false,o)"> Edit </button>
+        <button class="btn btn-danger btm-sm"(click)="deleteOrderdetail(i)"> Delete </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul class="pagination">
+  <li class="page-item">
+    <a href="javascript:void(0);"(click)="searchPrevious()"> Previous&ensp;</a>
+  </li>
+  
+  <li class="page-item"> <b>{{orderdetail.page}}</b> </li>
+  
+  <li class="page-item">
+    <a href="javascript:void(0);"(click)="searchNext()">&ensp;Next </a>
+  </li>
+</ul>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" *ngIf="!isEdit" id="exampleModalLabel">Add new Orderdetail</h5>
+        <h5 class="modal-title" *ngIf="isEdit" id="exampleModalLabel">Update Orderdetail</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row" *ngIf="!isEdit">
+            <div class="col-4">Orderdetail Id</div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập ID CTDH..." [(ngModel)]="orderdetails.orderdetailId"></div>
+        </div> <br>
+        <div class="row">
+          <div class="col-4">Price</div>
+          <div class="col-8"><input class="form-control" type = "number" placeholder="Nhập giá đơn hàng..." [(ngModel)]="orderdetails.price"></div>
+        </div>  <br>
+        <div class="row">
+          <div class="col-4"> Quantity </div>
+          <div class="col-8"><input class="form-control" type = "number" placeholder="Nhập số lượng đơn hàng" type = "number" [(ngModel)]="orderdetails.quantity"></div>
+        </div>  <br>
+        <div class="row">
+          <div class="col-4"> Order Id </div>
+          <div class="col-8"><input class="form-control" [(ngModel)]="orderdetails.orderId"></div>
+        </div>  <br>
+        <div class="row">
+          <div class="col-4"> Product Id </div>
+          <div class="col-8"><input class="form-control" [(ngModel)]="orderdetails.productId"></div>
+        </div>  <br>
+        <div class="row">
+          <div class="col-4"> User Id </div>
+          <div class="col-8"><input class="form-control"[(ngModel)]="orderdetails.userid"></div>
+        </div>  <br>
+        <div class="row">
+          <div class="col-4"> Orderdetail Description </div>
+          <div class="col-8"><input class="form-control" placeholder="Nhập mô tả (nếu có)" [(ngModel)]="orderdetails.orderdetailDescription"></div>
+        </div>  <br>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button *ngIf="isEdit" type="button" class="btn btn-primary"(click)="updateOrderdetail()">Save</button>
+        <button *ngIf="!isEdit" type="button" class="btn btn-success"(click)="addOrderdetail()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

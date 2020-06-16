@@ -1,0 +1,87 @@
+<h1 id="tableLabel">Categories</h1>
+
+<p>Bên dưới là danh sách các loại sản phẩm của cửa hàng chúng tôi.</p>
+
+<p *ngIf="!category"><em>Loading...</em></p>
+<button class="btn btn-primary"(click)="openModal(true,null)">Add new Category</button>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="category.totalRecords> 0">
+
+  <thead>
+    <tr>
+      <th>Category Id</th>
+      <th>Category Name</th>
+      <th>Category Image</th>
+      <th>Category Description</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of category.data; index as i;">
+      <td>{{ c.categoryId}}</td>
+      <td>{{ c.categoryName}}</td>
+      <td>{{ c.categoryImage}}</td>
+      <td>{{ c.categoryDescription}}</td>
+      
+      <td>
+        <button class="btn btn-info btm-sm"(click)="openModal(false,c)"> Edit </button>
+        <button class="btn btn-danger btm-sm"(click)="deleteCategory(i)"> Delete </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul class="pagination">
+  <li class="page-item">
+    <a href="javascript:void(0);"(click)="searchPrevious()"> Previous&ensp;</a>
+  </li>
+  
+  <li class="page-item"> <b>{{category.page}}</b> </li>
+  
+  <li class="page-item">
+    <a href="javascript:void(0);"(click)="searchNext()">&ensp;Next </a>
+  </li>
+</ul>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" *ngIf="!isEdit" id="exampleModalLabel">Add new Category</h5>
+        <h5 class="modal-title" *ngIf="isEdit" id="exampleModalLabel">Update Category</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="row" *ngIf="!isEdit">
+            <div class="col-4">Category Id</div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập ID loại cây..." [(ngModel)]="categories.categoryId"></div>
+        </div> <br>
+
+        <div class="row">
+          <div class="col-4">Category Name</div>
+          <div class="col-8"><input class="form-control" placeholder="Nhập loại cây..." [(ngModel)]="categories.categoryName"></div>
+        </div>  <br>
+
+        <div class="row">
+          <div class="col-4"> Category Image </div>
+          <div class="col-8"><input class="form-control"[(ngModel)]="categories.categoryImage"></div>
+        </div>  <br>
+
+        <div class="row">
+          <div class="col-4"> Category Description </div>
+          <div class="col-8"><input class="form-control" placeholder="Nhập mô tả (nếu có)" [(ngModel)]="categories.categoryDescription"></div>
+        </div>  <br>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button *ngIf="isEdit" type="button" class="btn btn-primary"(click)="updateCategory()">Save</button>
+        <button *ngIf="!isEdit" type="button" class="btn btn-success"(click)="addCategory()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

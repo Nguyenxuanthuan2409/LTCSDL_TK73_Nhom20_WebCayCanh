@@ -1,0 +1,95 @@
+<h1 id="tableLabel">Orders</h1>
+
+<p>Bên dưới là danh sách các đơn đặt hàng của cửa hàng chúng tôi.</p>
+
+<p *ngIf="!order"><em>Loading...</em></p>
+<button class="btn btn-primary"(click)="openModal(true,null)">Add new Order</button>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="order.totalRecords> 0">
+
+  <thead>
+    <tr>
+      <th>Order Id</th>
+      <th>Order Date</th>
+      <th>Order Number</th>
+      <th>Customer Id</th>
+      <th>Order Description</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let o of order.data; index as i;">
+      <td>{{ o.orderId}}</td>
+      <td>{{ o.orderDate}}</td>
+      <td>{{ o.orderNumber}}</td>
+      <td>{{ o.customerId}}</td>
+      <td>{{ o.orderDescription}}</td>
+      
+      
+      <td>
+        <button class="btn btn-info btm-sm"(click)="openModal(false,o)"> Edit </button>
+        <button class="btn btn-danger btm-sm"(click)="deleteOrder(i)"> Delete </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul class="pagination">
+  <li class="page-item">
+    <a href="javascript:void(0);"(click)="searchPrevious()"> Previous&ensp;</a>
+  </li>
+  
+  <li class="page-item"> <b>{{order.page}}</b> </li>
+  
+  <li class="page-item">
+    <a href="javascript:void(0);"(click)="searchNext()">&ensp;Next </a>
+  </li>
+</ul>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" *ngIf="!isEdit" id="exampleModalLabel">Add new Order</h5>
+        <h5 class="modal-title" *ngIf="isEdit" id="exampleModalLabel">Update Order</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="row" *ngIf="!isEdit">
+            <div class="col-4">Order Id</div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập Order ID" [(ngModel)]="orders.orderId"></div>
+        </div> <br>
+
+        <div class="row">
+          <div class="col-4">Order Date</div>
+          <div class="col-8"><input class="form-control" placeholder="Định dạng theo kiểu yyyy-MM-dd" [(ngModel)]="orders.orderDate"></div>
+        </div>  <br>
+
+        <div class="row">
+          <div class="col-4"> Order Number </div>
+          <div class="col-8"><input class="form-control" type = "number" [(ngModel)]="orders.orderNumber"></div>
+        </div>  <br>
+
+        <div class="row">
+          <div class="col-4"> Customer Id </div>
+          <div class="col-8"><input class="form-control"[(ngModel)]="orders.customerId"></div>
+        </div>  <br>
+
+        <div class="row">
+            <div class="col-4"> Order Description </div>
+            <div class="col-8"><input class="form-control" placeholder="Nhập mô tả (nếu có)" [(ngModel)]="orders.orderDescription"></div>
+        </div>  <br>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button *ngIf="isEdit" type="button" class="btn btn-primary"(click)="updateOrder()">Save</button>
+        <button *ngIf="!isEdit" type="button" class="btn btn-success"(click)="addOrder()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
