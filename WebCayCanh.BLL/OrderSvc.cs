@@ -181,6 +181,23 @@ namespace WebCayCanh.BLL
 
             return res;
         }
+
+        public object spSel_LayChiTietDonHangTheoID(string orId)
+        {
+            return _rep.spSel_LayChiTietDonHangTheoID(orId);
+        }
+
+        public object spSel_OrderFromToPagination(DateTime dateF, DateTime dateT, int size, int page)
+        {
+            return _rep.spSel_OrderFromToPagination(dateF, dateT, size, page);
+        }
+
+        public object spSel_LayChiTietDonHangTheoID_LinQ(string orId)
+        {
+            return _rep.spSel_LayChiTietDonHangTheoID_LinQ(orId);
+        }
+
+        
         #endregion
     }
 }

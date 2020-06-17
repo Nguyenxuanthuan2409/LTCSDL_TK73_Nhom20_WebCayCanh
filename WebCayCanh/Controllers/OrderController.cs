@@ -49,6 +49,33 @@ namespace WebCayCanh.Web.Controllers
             var res = _svc.DeleteOrder(req.id);
             return Ok(res);
         }
+
+        [HttpPost("get-by-spSel_LayChiTietDonHangTheoID")]
+        public IActionResult spSel_LayChiTietDonHangTheoID([FromBody]SimpleReq req)
+        {
+            var res = new SingleRsp();
+            res.Data = _svc.spSel_LayChiTietDonHangTheoID(req.Id);
+            return Ok(res);
+        }
+
+        [HttpPost("get-by-spSel_OrderFromToPagination")]
+        public IActionResult spSel_OrderFromToPagination([FromBody]RevenueReq req)
+        {
+            var res = new SingleRsp();
+            res.Data = _svc.spSel_OrderFromToPagination(req.dateF, req.dateT, req.size, req.page);
+            return Ok(res);
+        }
+
+        [HttpPost("get-by-spSel_LayChiTietDonHangTheoID_LinQ")]
+        public IActionResult spSel_LayChiTietDonHangTheoID_LinQ([FromBody]SimpleReq req)
+        {
+            var res = new SingleRsp();
+            res.Data = _svc.spSel_LayChiTietDonHangTheoID_LinQ(req.Id);
+            return Ok(res);
+        }
+
+       
+
         private readonly OrderSvc _svc;
     }
 }
