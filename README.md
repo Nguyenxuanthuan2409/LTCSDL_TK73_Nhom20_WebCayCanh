@@ -20,6 +20,8 @@
 ( Mặc định nên để WebCayCanh ). Sau đó đổi tên chuỗi kết nối và mật khẩu sa trong file WebCayCanhContext rồi sẽ chạy được Project.
 Có thể Test các API trong localhost chạy lên rồi thêm /swagger/index.html/
 
+- Hướng dẫn chi tiết, phân chia công việc, mô tả nghiệp vụ chi tiết nằm trong thư mục **3_FileWord_Submit_Teacher**. Thầy có thể xem chi tiết ở đó ạ.
+
 ## **4. Phân công công việc:**
 - #### **Nguyễn Xuân Thuận:** 
   - Lên lịch họp nhóm cùng thiết kế Database cho ***Web Cây Cảnh***.
